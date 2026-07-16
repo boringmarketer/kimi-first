@@ -20,7 +20,16 @@ Design work, tiny edits, prod operations, and review are **never** delegated.
 
 ## Install
 
-Requires [Claude Code](https://claude.com/claude-code) and the [Kimi Code CLI](https://moonshotai.github.io/kimi-code/) (authenticated via `kimi login`).
+**1. Kimi Code CLI** (skip if you have it — check with `kimi --version`):
+
+```bash
+curl -fsSL https://code.kimi.com/kimi-code/install.sh | bash
+kimi login   # device-code flow, needs a Kimi membership
+```
+
+Docs: [moonshotai.github.io/kimi-code](https://moonshotai.github.io/kimi-code/)
+
+**2. The skill**, into [Claude Code](https://claude.com/claude-code):
 
 ```bash
 mkdir -p ~/.claude/skills/kimi-first
